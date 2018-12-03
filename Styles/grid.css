@@ -1,0 +1,36 @@
+#contenedorPrincipal {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: auto 5px auto 5px auto;
+}
+
+#header,
+#footer {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+#header {
+    grid-row: 1;
+}
+
+#footer {
+    grid-row: -1;
+}
+
+#menu {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+#main {
+    grid-column: 2;
+    grid-row: 3;
+}
+
+#main,
+#header,
+#footer,
+#menu {
+    padding: 5px;
+}
